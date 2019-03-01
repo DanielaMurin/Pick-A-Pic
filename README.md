@@ -1,6 +1,9 @@
 # Built Using Create React App
 
-Quick Overview
+## How to run the project locally
+
 npx create-react-app my-app
+
 cd my-app
+
 npm start
