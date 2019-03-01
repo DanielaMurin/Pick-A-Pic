@@ -7,6 +7,7 @@ using System.Web;
 
 namespace WebApplication1
 {
+    // Singleton
     public sealed class Database
     {
         private static Database instance = null;
@@ -47,8 +48,8 @@ namespace WebApplication1
             }
             catch
             {
-                return "error";
                 // unable to connect to server
+                return "error";
             }
         }
     }
