@@ -18,8 +18,6 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
 
-    // console.log("​[reducer]");
-
     switch (action.type) {
         case actionTypes.CHANGE_RADIUS:
             return { ...state, radius: action.rad };
