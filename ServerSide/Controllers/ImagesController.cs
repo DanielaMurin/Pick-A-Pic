@@ -19,7 +19,7 @@ namespace WebApplication1.Controllers
         [Route("api/image/{id}")]
         public HttpResponseMessage GetImages(string id)
         {
-            // need to be type uni
+            // needs to be type uni
             var result = new HttpResponseMessage(HttpStatusCode.OK);
             string localPhotoPath = HttpContext.Current.Server.MapPath("~//photos//" + id + ".jpg");
             FileStream fileStream = new FileStream(localPhotoPath, FileMode.Open);
